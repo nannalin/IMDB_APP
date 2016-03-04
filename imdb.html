@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<title>IMDB</title>
+</head>
+<body>
+	<div class="container">
+		<h1>Search IMDB</h1>
+
+		<input type="text" id="movieTitle" class="form-control" placeholder="Movie Title">
+
+		<button id="searchMovie" class="btn btn-primary btn-block">Search</button>
+
+		<table class="table table-striped" id="result">
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Plot</th>
+					<th>Poster</th>
+				</tr>				
+			</thead>
+			<tbody id="container">
+				<tr id="template">
+					<td><a href="#" class="link"></a></td>
+					<td class="plot"></td>
+					<td><img src="" class="poster"></td>
+
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="imdb.js"></script>
+</body>
+</html> 
